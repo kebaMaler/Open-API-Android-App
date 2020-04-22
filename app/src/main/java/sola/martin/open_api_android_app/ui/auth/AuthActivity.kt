@@ -1,7 +1,8 @@
-package sola.martin.open_api_android_app
+package sola.martin.open_api_android_app.ui.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import sola.martin.open_api_android_app.R
 
 class AuthActivity : AppCompatActivity() {
 
