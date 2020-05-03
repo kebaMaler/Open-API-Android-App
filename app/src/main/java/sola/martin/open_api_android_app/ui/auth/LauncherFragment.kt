@@ -1,6 +1,7 @@
 package sola.martin.open_api_android_app.ui.auth
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_launcher.*
 
 import sola.martin.open_api_android_app.R
 
-class LauncherFragment : Fragment() {
+class LauncherFragment : BaseAuthFragment() {
 
 
 
@@ -26,6 +27,9 @@ class LauncherFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        Log.d(TAG, "LauncherFragment: ${viewModel.hashCode()}")
+
 
         register.setOnClickListener {
             navRegistration()
@@ -59,6 +63,7 @@ class LauncherFragment : Fragment() {
         findNavController().navigate(R.id.action_launcherFragment_to_registerFragment)
 
     }
+
 
 
 

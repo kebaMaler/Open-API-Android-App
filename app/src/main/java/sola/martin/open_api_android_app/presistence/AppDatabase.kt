@@ -10,7 +10,7 @@ abstract class AppDatabase: RoomDatabase() {
 
     abstract fun getAuthTokenDao(): AuthTokenDao
 
-    abstract fun hetAccountPropertiesDao(): AccountPropertiesDao
+    abstract fun getAccountPropertiesDao(): AccountPropertiesDao
 
     companion object{
 
